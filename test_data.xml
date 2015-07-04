@@ -1,0 +1,90 @@
+<SUITE>
+    <TEST>
+        <NAME>Acceptance</NAME>
+        <TIME>Tue Jun 30 11:01:58 PDT 2015</TIME>
+        <TOTAL>10</TOTAL>
+        <PASS>10</PASS>
+        <FAIL>0</FAIL>
+        <ERROR>0</ERROR>
+        <CRASHES>0</CRASHES>
+        <RATE>100%</RATE>
+        <BUGS>--</BUGS>
+    </TEST>
+	<TEST>
+        <NAME>Interface</NAME>
+        <TIME>Wed Jan 30 11:01:58 PDT 2015</TIME>
+        <TOTAL>25</TOTAL>
+        <PASS>22</PASS>
+        <FAIL>1</FAIL>
+        <ERROR>2</ERROR>
+        <CRASHES>0</CRASHES>
+        <RATE>60%</RATE>
+        <BUGS>#BG1345, #BG1349</BUGS>
+    </TEST>
+	<TEST>
+        <NAME>Regression</NAME>
+        <TIME>fri Feb 10 11:01:58 PDT 2015</TIME>
+        <TOTAL>30</TOTAL>
+        <PASS>30</PASS>
+        <FAIL>0</FAIL>
+        <ERROR>0</ERROR>
+        <CRASHES>0</CRASHES>
+        <RATE>100%</RATE>
+        <BUGS>--</BUGS>
+    </TEST>
+	<TEST>
+        <NAME>Browser-Testing</NAME>
+        <TIME>Thu Nov 30 11:01:58 PDT 2015</TIME>
+        <TOTAL>15</TOTAL>
+        <PASS>15</PASS>
+        <FAIL>0</FAIL>
+        <ERROR>0</ERROR>
+        <CRASHES>0</CRASHES>
+        <RATE>100%</RATE>
+        <BUGS>--</BUGS>
+    </TEST>
+	<TEST>
+        <NAME>Unit</NAME>
+        <TIME>Mon Apr 5 11:01:58 PDT 2015</TIME>
+        <TOTAL>20</TOTAL>
+        <PASS>19</PASS>
+        <FAIL>0</FAIL>
+        <ERROR>1</ERROR>
+        <CRASHES>0</CRASHES>
+        <RATE>80%</RATE>
+        <BUGS>#BG2345</BUGS>
+    </TEST>
+	<TEST>
+        <NAME>Security</NAME>
+        <TIME>Mon May 5 11:01:58 PDT 2015</TIME>
+        <TOTAL>20</TOTAL>
+        <PASS>15</PASS>
+        <FAIL>5</FAIL>
+        <ERROR>3</ERROR>
+        <CRASHES>0</CRASHES>
+        <RATE>40%</RATE>
+        <BUGS>#BG2045, #BG2044, #BG2065</BUGS>
+    </TEST>
+	<TEST>
+        <NAME>Smoke Test</NAME>
+        <TIME>Mon Mar 5 11:01:58 PDT 2015</TIME>
+        <TOTAL>20</TOTAL>
+        <PASS>15</PASS>
+        <FAIL>5</FAIL>
+        <ERROR>1</ERROR>
+        <CRASHES>0</CRASHES>
+        <RATE>30%</RATE>
+        <BUGS>#BG9345</BUGS>
+    </TEST>
+	<TEST>
+        <NAME>Sanity</NAME>
+        <TIME>Mon Dec 5 11:01:58 PDT 2015</TIME>
+        <TOTAL>20</TOTAL>
+        <PASS>19</PASS>
+        <FAIL>0</FAIL>
+        <ERROR>1</ERROR>
+        <CRASHES>0</CRASHES>
+        <RATE>70%</RATE>
+        <BUGS>#BG0345</BUGS>
+    </TEST>
+</SUITE>

@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Test Status Report</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	 <!-- Latest compiled and minified CSS -->
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+<!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+<!-- Latest compiled JavaScript -->
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+<link rel="stylesheet" type="text/css" href="styles.css">
+
+<style>
+ table, th, td {
+    border: 1px solid black;
+    border-collapse:collapse;
+}
+th, td {
+    padding: 5px;
+</style>
+<script src="loadxmldoc.js"></script>
+
+</head>
+<body>
+<div class = "container">
+  <div class = "jumbotron">
+     <header>Test Status Report - Q3</header>
+	 
+<script>
+if (window.XMLHttpRequest)
+  {// code for IE7+, Firefox, Chrome, Opera, Safari
+  xmlhttp=new XMLHttpRequest();
+  }
+else
+  {// code for IE6, IE5
+  xmlhttp=new ActiveXObject("Microsoft.XMLHTTP");
+  }
+xmlhttp.open("GET","test_data.xml",false);
+xmlhttp.send();
+xmlDoc=xmlhttp.responseXML;
+document.write("<table><tr><th>Name</th><th>Time</th><th>Total</th><th>Pass</th><th>Fail</th><th>Error</th><th>Crashes</th><th>Rate</th><th>Bugs</th></tr>");
+var x=xmlDoc.getElementsByTagName("TEST");
+for (i=0;i<x.length;i++)
+  {
+  document.write("<tr><td>");
+  document.write(x[i].getElementsByTagName("NAME")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("TIME")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("TOTAL")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("PASS")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("FAIL")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("ERROR")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("CRASHES")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("RATE")[0].childNodes[0].nodeValue);
+  document.write("</td><td>");
+  document.write(x[i].getElementsByTagName("BUGS")[0].childNodes[0].nodeValue);
+  document.write("</td></tr>");
+  }
+document.write("</table>");
+
+$('td').each(function() {
+    // get table cell value and try to convert to an float
+    var fValue = parseFloat($(this).text());
+    // if value is a number and less then zero
+    if (!isNaN(fValue) && fValue <= 50) {
+        // get table row
+        var oTableRow = $(this).parent();
+        // change the background color to red
+        oTableRow.css('background-color', 'red');
+    }
+});
+</script>
+</div>
+</div>
+</body>
+</html>
